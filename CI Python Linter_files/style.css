@@ -1,0 +1,71 @@
+ #editor {
+     height: 500px;
+     width: 100%;
+     display: inline-block;
+ }
+
+ #code {
+     display: none;
+ }
+
+ .heading {
+     font-family: Montserrat;
+ }
+
+ .dark {
+     background-color: #505050;
+     color: #fafafa;
+     transition: 0.4s;
+ }
+
+ .light {
+     background-color: #fafafa;
+     color: #505050;
+     transition: 0.4s;
+ }
+
+ #logo {
+     transition: 0.4s;
+ }
+
+ .dark #results a {
+     color: #ced4da;
+ }
+
+ #theme-area {
+     margin: 0;
+     height: 100vh;
+     padding: 20px;
+ }
+
+ #results {
+     height: 370px;
+     overflow-y: auto;
+ }
+
+ .mode {
+     height: 24px;
+     width: 24px;
+     margin: 0 4px;
+     display: inline-block;
+ }
+
+ .modes {
+     display: flex;
+     align-items: stretch;
+     justify-content: flex-start;
+     width: 30%;
+ }
+
+ .form-switch {
+     padding-left: 3em;
+     vertical-align: middle;
+ }
+
+ .form-check {
+     display: inline-block;
+ }
+
+ .form-check-input:checked {
+     background-color: #505050;
+ }
