@@ -1,14 +1,14 @@
 from random import randint
 
-Hidden_Pattern = [[' ']*8 for x in range(8)]
-Guess_Pattern = [[' ']*8 for x in range(8)]
+Hidden_Pattern = [[' ']*5 for x in range(5)]
+Guess_Pattern = [[' ']*5 for x in range(5)]
 
-let_to_num = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
+let_to_num = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4}
 
 
 def print_board(board):
-    print(' A B C D E F G H')
-    print(' ***************')
+    print(' A B C D E ')
+    print(' **********')
     row_num = 1
     for row in board:
         print("%d|%s|" % (row_num, "|".join(row)))
@@ -16,25 +16,25 @@ def print_board(board):
 
 
 def get_ship_location():
-    """Enter the row number between 1 to 8"""
-    row = input('Please enter a ship row 1-8 ').upper()
-    while row not in '12345678':
+    """Enter the row number between 1 to 5"""
+    row = input('Please enter a ship row 1-5 ').upper()
+    while row not in '12345':
         print("Please enter a valid row ")
-        row = input('Please enter a ship row 1-8 ')
-    """Enter the Ship column from A TO H"""
-    column = input('Please enter a ship column A-H ').upper()
-    while column not in 'ABCDEFGH':
+        row = input('Please enter a ship row 1-5 ')
+    """Enter the Ship column from A TO E"""
+    column = input('Please enter a ship column A-E ').upper()
+    while column not in 'ABCDE':
         print("Please enter a valid column ")
-        column = input('Please enter a ship column A-H ')
+        column = input('Please enter a ship column A-E ')
     return int(row)-1, let_to_num[column]
 
 
 def create_ships(board):
     """Function that creates the ships"""
-    for ship in range(5):
-        ship_r, ship_cl = randint(0, 7), randint(0, 7)
+    for ship in range(3):
+        ship_r, ship_cl = randint(0, 4), randint(0, 4)
         while board[ship_r][ship_cl] == 'X':
-            ship_r, ship_cl = randint(0, 7), randint(0, 7)
+            ship_r, ship_cl = randint(0, 4), randint(0, 4)
         board[ship_r][ship_cl] = 'X'
 
 
@@ -63,7 +63,7 @@ while turns > 0:
         print('Sorry,You missed')
         Guess_Pattern[row][column] = '-'
         turns -= 1
-    if count_hit_ships(Guess_Pattern) == 5:
+    if count_hit_ships(Guess_Pattern) == 3:
         print("Congratulations you have sunk all the battleships ")
         break
     print(' You have ' + str(turns) + ' turns remaining ')
