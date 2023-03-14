@@ -23,7 +23,7 @@ def get_ship_location():
         row = input('Please enter a ship row 1-5 \n')
     """Enter the Ship column from A TO E"""
     column = input('Please enter a ship column A-E \n ').upper()
-    while column not in 'ABCDE':
+    while column not in 'abcde':
         print("Please enter a valid column ")
         column = input('Please enter a ship column A-E \n ')
     return int(row)-1, let_to_num[column]
