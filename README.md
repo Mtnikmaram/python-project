@@ -1,8 +1,8 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Welcome to Battleship
 
-Welcome USER_NAME,
+Battleship is a python terminal game , which runs in heroku
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Users can must find the ships of the computer before the computer finds them.
 
 ## Reminders
 
