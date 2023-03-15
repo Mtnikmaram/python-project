@@ -3,8 +3,14 @@ Welcome to Battleship
 Battleship is a python terminal game , which runs in heroku
 
 Users can must find the ships of the computer before the computer finds them.
+![my work](images/ui.dev.png)
+this is the live version of my project <a href="https://python-project-battleship.herokuapp.com/" target="_blank" rel="noopener">Battleship</a>
 
-## Reminders
+
+## How to play
+
+Ultimate Battleships is based on the classic pen-and-paper game.
+in this version the player must find the hidden ship of the computer.
 
 * Your code must be placed in the `run.py` file
 * Your dependencies must be placed in the `requirements.txt` file
