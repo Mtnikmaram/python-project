@@ -11,27 +11,51 @@ this is the live version of my project <a href="https://python-project-battleshi
 
 Ultimate Battleships is based on the classic pen-and-paper game.
 in this version the player must find the hidden ship of the computer.
+if the player hits a ship its indicated by 'x' and it misses is indicated by '-'
+The winner is the player who sinks all of their opponent's ships first.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## features 
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Existing Feature
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+* random board
+    * ships are randomly placed in the boards
+    * the player cannot see where the computer ships are
+    ![area](images/area.png)
+    * play againes the computer
+    * accepts user input
+    * it has 10 term for the challeng
+* input validation
+    * you cannot enter coordinates outside the size of the grid 
+    * you cannot enter the same guess twice
+    ![gusses](images/same-gusess.png)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Testing
 
-Connect your GitHub repository and deploy as normal.
+i have manually tested the project by doing the following :
+    * passed the code in pep8 inter and confrim no problems
+    * checked with invalid input 
+    * tested in heroku terminal
+    ![test](images/CI%20Python%20Linter.png)
 
-## Constraints
+## Bugs 
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+the must bug was the input method so i had to change it to know the first number is '1' not '0'
 
------
-Happy coding!
+## Deployment 
+
+This project was deployed using the code institute mock terminal for heroku
+    * clone the project in github
+    * create a new heroku app
+    * set the buildback to python and node.js in order 
+    * link the heroku to the repository
+    * click on Deploy
+
+# credits
+* code institute for the deployment terminal
+* searching in google for helps
+
+# Acknowledgements
+The site was completed as a Portfolio 3 Project piece for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/). As such I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, and all at the Code Institute for their help and support. 
