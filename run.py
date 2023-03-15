@@ -3,7 +3,7 @@ from random import randint
 Hidden_Pattern = [[' ']*5 for x in range(5)]
 Guess_Pattern = [[' ']*5 for x in range(5)]
 
-let_to_num = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4}
+let_to_num = {'a': 0, 'b': 1, 'c': 2, 'd': 3, 'e': 4}
 
 
 def print_board(board):
