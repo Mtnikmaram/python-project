@@ -16,8 +16,7 @@ click here to play the game: <a href="https://terminal-battleships-game.herokuap
     * [How to Play](<#How-to-play>)
 * [**Features**](<#features>)
     * [Existing Features](<#Existing-Features>)
-    * [Future Features](<#Future-features>)
-* [**Data Model**](<#Data-Model>)
+    * [future Features](<#future-features>)
 * [**Testing**](<#testing>)
     * [Bugs](<#bugs>)
     * [Solved Bugs](<#solved-bugs>)
@@ -97,14 +96,7 @@ The game generates the ships for the game randomly.
     
 [Back to Top](<#contents>)
 
-## Data Model
-
-Here you can find the logical flow chart that I made to help me create the game. <a href="https://githu -b.com/GrantWils23/Portfolio-Project-3---Python-Essentials/blob/main/assets/Battleships%20Flow%20Chart.pdf" target="_blank">Battleships Flow Diagram</a>. This was really useful in helping me understand the flow and direction on where to take the game and how I should look to create the game.
-<br>
-
-[Back to Top](<#contents>)
-
-### Features left to implement
+### Future Features 
 
 <li>Have ships larger that 1 x 1 appear on the grid.</li>
 <li>Allow the players to select the size of the board and how many battleships there can be.</li>
@@ -147,20 +139,11 @@ To test my project, I have manually tested the project by doing the following:
 [Back to Top](<#contents>)
 <br>
 
-### Unsolved Bugs
-
-<p>There are no unfixed bugs found on the project.</p>
-<br>
-
-[Back to Top](<#contents>)
-<br>
-
 ## Technologies Used
 
 <li><a href="https://github.com/" target="_blank">GitHub</a> - The site was used to edit and host the website.</li>
 <li><a href="https://gitpod.io/projects" target="_blank">GitPod</a> - Used in the deployment and creating the website.</li>
 <li><a href="https://www.python.org/" target="_blank">Python</a> - This was used in the production to get the game running as it is required for the app to run.</li>
-<li><a href="https://nodejs.org/en/" target="_blank">Node.js</a> - This was used in the production to get the game running as it is required for app to run.</li>
 <li><a href="http://pep8online.com/" target="_blank">pep8online</a> - This site was used to validate the python code to check for any errors within my writing.</li>
 <li><a href="https://www.heroku.com/" target="_blank">Heroku</a> - This was used to deploy the game in a mock terminal that allows anyone to play the game online.</li>
 <li><a href="https://docs.python.org/3/library/random.html" target="_blank">Python Libary Random</a> - This was used to generate random numbers within the games code for deployment of the ships or the computers random guesses.</li>
