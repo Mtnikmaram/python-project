@@ -1,6 +1,6 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-<h1>Portfolio_Project_3 --- Python_Essentials</h1>
+
 <h1>Batlleship Game!</h1>
 <p>This project is a battleships game that is run and played within the terminal. The system runs on a mock terminal through <a href="https://www.heroku.com/" target="_blank">Heroku</a>
 The aim of the game is to destroy the computers battleships by guessing where on a grid their battleships are and firing upon them before the computer finds and destroys all yours first.</p>
@@ -15,7 +15,6 @@ click here to play the game: <a href="https://terminal-battleships-game.herokuap
 * [**Game Rules**](<#Game-rules>)
     * [How to Play](<#How-to-play>)
 * [**Features**](<#features>)
-    * [Existing Features](<#Existing-Features>)
     * [future Features](<#future-features>)
 * [**Testing**](<#testing>)
     * [Bugs](<#bugs>)
@@ -98,10 +97,8 @@ The game generates the ships for the game randomly.
 
 ### Future Features 
 
-<li>Have ships larger that 1 x 1 appear on the grid.</li>
 <li>Allow the players to select the size of the board and how many battleships there can be.</li>
 <li>Allow the player to position the ships themselves.</li>
-<li>To create a time delay between text display and shoots fired by the computer's turn to create a better flow to the game.</li>
 <br>
 
 [Back to Top](<#contents>)
@@ -110,17 +107,12 @@ The game generates the ships for the game randomly.
 # Testing
 
 To test my project, I have manually tested the project by doing the following:
-<ul>
-    <li>
+
+    <p>
         Testing the programs code in <a href="http://pep8online.com/" target="_blank">pep8online</a> and confirmed that there were no errors with the code.
-    </li>
-    <li>
-        Tested the validations to prove the program is working correctly by entering invalid inputs and checking that all error types are accounted for (outside size of board parameters, same input cannot be inputted twice and strings are not excepted).
-    </li>
-    <li>
-        Tested in the local terminal and the Code institute Heroku Terminal.
-    </li>
-</ul>
+    </p>
+   
+
 
 ![image](https://user-images.githubusercontent.com/72948843/145612044-6b51e236-3fd2-431f-9284-b45890a95786.png)
 
@@ -129,12 +121,7 @@ To test my project, I have manually tested the project by doing the following:
 
 ## Bugs
 
-### Solved Bugs
-
-<ul>
-    <li>I created a validation for checking if the guess made ca be found in the guesses but I didnt pass this validation into the code for the computers turn. This showed up that the
-    computer was hitting targets it has already shot and missed. resulting in an unbalanced and unfair game experience wereby the user can have a greater chance at winning then the computer.</li>
-</ul>
+ <p> I had trouble for the validate cordinate </p>
 
 [Back to Top](<#contents>)
 <br>
@@ -142,11 +129,9 @@ To test my project, I have manually tested the project by doing the following:
 ## Technologies Used
 
 <li><a href="https://github.com/" target="_blank">GitHub</a> - The site was used to edit and host the website.</li>
-<li><a href="https://gitpod.io/projects" target="_blank">GitPod</a> - Used in the deployment and creating the website.</li>
 <li><a href="https://www.python.org/" target="_blank">Python</a> - This was used in the production to get the game running as it is required for the app to run.</li>
 <li><a href="http://pep8online.com/" target="_blank">pep8online</a> - This site was used to validate the python code to check for any errors within my writing.</li>
 <li><a href="https://www.heroku.com/" target="_blank">Heroku</a> - This was used to deploy the game in a mock terminal that allows anyone to play the game online.</li>
-<li><a href="https://docs.python.org/3/library/random.html" target="_blank">Python Libary Random</a> - This was used to generate random numbers within the games code for deployment of the ships or the computers random guesses.</li>
 <br>
 
 [Back to Top](<#contents>)
@@ -201,7 +186,8 @@ To test my project, I have manually tested the project by doing the following:
 
 # Credits
 
-<p>I would like to say a small thanks to the Code institute for the first bit of help on how to setup the game and create objects models that have real value and functionality from their introduction video as it gave a good starting point on how to logically approach designing the game.</p>
+<p>I searched the google for the battel ship game and i have seen a lot projects so i have combind all of them and write my project </p>
+<p>I used the help of my mentor for this project</p>
 
 [Back to Top](<#contents>)
 
