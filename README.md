@@ -108,13 +108,13 @@ The game generates the ships for the game randomly.
 
 To test my project, I have manually tested the project by doing the following:
 
-    <p>
+
         Testing the programs code in <a href="http://pep8online.com/" target="_blank">pep8online</a> and confirmed that there were no errors with the code.
-    </p>
+
    
 
 
-![image](https://user-images.githubusercontent.com/72948843/145612044-6b51e236-3fd2-431f-9284-b45890a95786.png)
+![image](images/CI%20Python%20Linter.png)
 
 [Back to Top](<#contents>)
 <br>
