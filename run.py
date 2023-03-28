@@ -255,7 +255,7 @@ def start_game():
     print("*" * 40)
 
     add_ships_to_board(players_board)
-    add_ships_to_board(comptr_board)
+    add_ships_to_board(computers_board)
 
     board_display(players_board, computers_board)
     playgame(players_board, computers_board)
