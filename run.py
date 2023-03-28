@@ -245,7 +245,7 @@ def start_game():
     scores[players_name] = 0
     turns = 0
     players_board = GameBoard(boardsize, ships, "user", players_name, turns)
-    comptr_board = GameBoard(boardsize, ships, "computer", "Computer", turns)
+    computers_board = GameBoard(boardsize, ships, "computer", "Computer", turns)
 
     print()
     print("*" * 40)
@@ -257,8 +257,8 @@ def start_game():
     add_ships_to_board(players_board)
     add_ships_to_board(comptr_board)
 
-    board_display(players_board, comptr_board)
-    playgame(players_board, comptr_board)
+    board_display(players_board, computers_board)
+    playgame(players_board, computers_board)
 
 
 print()
