@@ -3,8 +3,44 @@ import random
 scores = {"computer": 0}
 
 
+class AlreadyGuessedError(Exception):
+    """
+    This error is raised when the guesses list is being check against the
+    new given guess coordinates.
+    """
+
+
+class OutOfRangeError(Exception):
+    """
+    This error is raised when the co-ordinate guessed is out of range
+    of the size of the board.
+    """
+
+
+class TooSmallValueError(Exception):
+    """
+    This error is raised when the co-ordinate guessed is less than 0.
+    """
+
+
+class WhiteSpaceError(Exception):
+    """
+    This error is raised when the input consists any whitespace in the name.
+    """
+
+
+class NoNameEnteredError(Exception):
+    """
+    This error is raised when the input doesn't have any value inside the name.
+    """
+
+
 class GameBoard():
-    """This is the model for the game board class."""
+    """
+    This is the model for the game board class. Here inside the Game_Board
+    Class you can set the size of the board, the number of ships, the board
+    player (computer or user)
+    """
     def __init__(self, size, num_of_ships, player_type, player_name, turns):
         self.size = size
         self.board_grid = [["." for x in range(size)] for y in range(size)]
@@ -162,6 +198,36 @@ def calculate_score(turn, gameboard):
             return scores
 
 
+def shots_fired_counter(gameboard):
+    """
+    calculates the ammount of turns it takes for the player to win
+    the game.
+    """
+    turns = gameboard.turns
+    print()
+    print("-" * 40)
+    print("All targets were located, and destroyed. Well played soldier!")
+    print(f"You fired {turns} shots to abliterate the enemy boats.")
+    print()
+    if int(turns) < 5:
+        print("WOW!")
+        print("Amazing accuracy, you have a keen aim and waste no shells!")
+        print("You should get a medal of honor for your heroics!")
+    elif int(turns) < 10:
+        print("That is an impressive display. Your shots hit true!")
+        print("Keep up that great work soldier!")
+    elif int(turns) < 15:
+        print("Good work and well fought, that was a tough battle!")
+        print("You came out on top and showed them who is boss!")
+    elif int(turns) < 20:
+        print("Well done, you downed your opponent in less than 20 shots")
+        print("That is a respectable score! Good work!")
+    else:
+        print("That was a real slog of a battle!")
+        print("That was down to the wire, well done for coming out on top!")
+    print("-" * 40)
+
+
 def board_display(players_board, computers_board):
     """
     board display function is a helper function that consolidates a
@@ -245,7 +311,7 @@ def start_game():
     scores[players_name] = 0
     turns = 0
     players_board = GameBoard(boardsize, ships, "user", players_name, turns)
-    computers_board = GameBoard(boardsize, ships, "computer", "Computer", turns)
+    comptr_board = GameBoard(boardsize, ships, "computer", "Computer", turns)
 
     print()
     print("*" * 40)
@@ -255,10 +321,10 @@ def start_game():
     print("*" * 40)
 
     add_ships_to_board(players_board)
-    add_ships_to_board(computers_board)
+    add_ships_to_board(comptr_board)
 
-    board_display(players_board, computers_board)
-    playgame(players_board, computers_board)
+    board_display(players_board, comptr_board)
+    playgame(players_board, comptr_board)
 
 
 print()
